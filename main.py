@@ -5,4 +5,5 @@ st.set_page_config(page_icon="💬2️⃣🧑🏻‍💻", page_title="Talk To T
 
 user_prompt = st.chat_input("Say something")
 if user_prompt:
-    st.write(f"User has sent the following prompt: {user_prompt}")
+    with st.chat_message("user"):
+        st.write(f"User: {user_prompt}")
